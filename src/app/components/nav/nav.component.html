@@ -1,0 +1,17 @@
+<nav>
+  <ol>
+    <li *ngFor="let item of navItems">
+      <div *ngIf="!item.bonus" class="day">{{ item.day }}</div>
+
+      <div *ngIf="!item.bonus">
+        <span *ngIf="!item.available" class="placeholder">A</span>
+        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')">A</a>
+      </div>
+
+      <div *ngIf="item.bonus">
+        <span *ngIf="!item.available" class="placeholder">B</span>
+        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')">B</a>
+      </div>
+    </li>
+  </ol>
+</nav>

@@ -1,0 +1,16 @@
+<!-- <code><pre>{{ input }}</pre></code> -->
+
+<p>
+  Total fuel needed: {{ totalFuel | number }}
+</p>
+
+<table>
+  <tr>
+    <th>Mass</th>
+    <th>Fuel</th>
+  </tr>
+  <tr *ngFor="let module of modules">
+    <td>{{ module.mass | number }}</td>
+    <td>{{ module.fuel | number }}</td>
+  </tr>
+</table>

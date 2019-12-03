@@ -1,0 +1,26 @@
+code {
+  font-size: 0.5em;
+}
+
+table {
+  width: 75%;
+  margin: 0 auto;
+
+  th,
+  td {
+    text-align: right;
+    font-weight: normal;
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+.sub-item {
+  display: inline-block;
+
+  &+.sub-item {
+    margin-left: 1em;
+  }
+}

@@ -5,12 +5,12 @@
 
       <div *ngIf="!item.bonus">
         <span *ngIf="!item.available" class="placeholder">A</span>
-        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')">A</a>
+        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')" routerLinkActive="active">A</a>
       </div>
 
       <div *ngIf="item.bonus">
         <span *ngIf="!item.available" class="placeholder">B</span>
-        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')">B</a>
+        <a *ngIf="item.available" [routerLink]="'star-'+item.day+(item.bonus?'b':'a')" routerLinkActive="active">B</a>
       </div>
     </li>
   </ol>

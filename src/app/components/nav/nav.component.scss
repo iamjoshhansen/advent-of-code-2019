@@ -31,4 +31,9 @@ li {
 
 a {
   display: block;
+
+  &.active {
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+  }
 }

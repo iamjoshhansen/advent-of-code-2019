@@ -1,0 +1,19 @@
+<!-- <code><pre>{{ states | json }}</pre></code> -->
+
+<div class="final-answer">
+  <span>{{ finalAnswer }}</span>
+</div>
+
+<table>
+  <tr *ngFor="let state of states">
+    <td>{{ state.opCode === 1 ? '+' : '*' }}</td>
+    <td *ngFor="let node of state.data; let n = index;">
+      <div
+        [class.cursored]="state.cursor === n || state.cursor+1 === n || state.cursor+2 === n || state.cursor+3 === n"
+        [class.is-a]="n === state.a"
+        [class.is-b]="n === state.b"
+        [class.is-c]="n === state.c"
+      >{{ node | number }}</div>
+    </td>
+  </tr>
+</table>

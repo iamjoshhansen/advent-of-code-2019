@@ -1,0 +1,47 @@
+table {
+  font-size: 0.25em;
+  border-collapse: collapse;
+
+  td {
+    text-align: right;
+
+    div {
+      padding: 2px;
+      border-radius: 0.5em;
+      border: solid 1px transparent;
+
+      &.is-a {
+        border-left-color: #999;
+      }
+
+      &.is-b {
+        border-right-color: #999;
+      }
+
+      &.is-c {
+        color: #090;
+        text-shadow: 0 0 2px #fff;
+      }
+
+      &.cursored {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+
+
+.final-answer {
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 0.5em;
+
+  span {
+    height: 1em;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.25em 0.5em;
+    line-height: 1em;
+  }
+}

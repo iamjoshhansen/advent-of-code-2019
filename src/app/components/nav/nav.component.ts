@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class NavComponent implements OnInit {
   navItems: {day: number; bonus: boolean; available: boolean}[] = [];
-  private availableNavItems: string[] = ['1a', '1b'];
+  private availableNavItems: string[] = ['1a', '1b', '2a'];
 
   constructor() {}
 

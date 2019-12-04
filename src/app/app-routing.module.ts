@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {Star1aComponent} from './stars/star1a/star1a.component';
 import {Star1bComponent} from './stars/star1b/star1b.component';
 import {Star2aComponent} from './stars/star2a/star2a.component';
+import {Star2bComponent} from './stars/star2b/star2b.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'star-2a',
     component: Star2aComponent,
+  },
+  {
+    path: 'star-2b',
+    component: Star2bComponent,
   },
 ];
 

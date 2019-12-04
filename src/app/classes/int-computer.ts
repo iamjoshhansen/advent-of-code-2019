@@ -71,4 +71,9 @@ export class IntComputer {
     }
     return hasNext;
   }
+
+  result() {
+    while (this.step());
+    return this.data[0];
+  }
 }

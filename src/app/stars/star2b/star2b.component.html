@@ -1,0 +1,16 @@
+<div class="final-answer">
+    <span>{{ finalAnswer }}</span>
+  </div>
+
+<app-progress-bar [completed]="progress" [count]="total"></app-progress-bar>
+
+<table>
+  <tr *ngFor="let noun of nouns">
+    <td
+      *ngFor="let verb of verbs"
+      [class.correct]="correctKey === noun+'-'+verb"
+      [class.given]="!!answers[noun+'-'+verb]"
+      [title]="answers[noun+'-'+verb]"
+    ></td>
+  </tr>
+</table>
